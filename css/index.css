@@ -61,57 +61,96 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    color: white;
+    color: rgb(225, 239, 230);
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
 }
 
 h2 {
-    font-size: 6rem;
-}
-
-h3 {
     font-size: 5rem;
 }
 
-p, a {
+h3 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
     font-size: 3rem;
 }
 
 /* header section */
 header {
+    text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-image: url('../img/home-header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.header-container {
+    height: 35%;
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+.menu {
+    display:flex;
+    justify-content: space-around;
+}
+
+.icon {
+    font-size: 4rem;
+}
+
+.icon i {
+    margin: 10px;
+}
+
 /* spacers */
 .spacer {
     width: 100%;
     height: 20vh;
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(138, 242, 247);
 }
 .spacer-sm {
     width: 100%;
     height: 10vh;
-    background-color: rgb(0, 4, 17);
+    background-color: rgb(247, 201, 239);
 }
 
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    padding-top: 3vh;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-gallery img {
+    margin: 10px;
+    width: auto;
+    height: auto;
 }
 
 /* about us section */
@@ -197,8 +236,38 @@ footer {
     font-size: 3rem;
     background-color: rgb(0, 4, 17);
 }
+.footer-container {
+    display:flex;
+    background-color: rgb(0, 4, 17);
+}
+
+footer .mail {
+    text-align: center;
+    width: 25%;
+}
+
+footer nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size:3rem;
+}
+input {
+    font-size: 2rem;
+}
+
+button {
+    font-size: 2rem;
+}
+
 .copyright {
     background-color: rgb(0, 4, 17);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
 }
 
 /* mobile media query */

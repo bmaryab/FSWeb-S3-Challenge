@@ -60,7 +60,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    color: white;
+    color: rgb(225, 239, 230)
 }
 
 h1, h2, h3, h4, h5, h6, p, a, i {
